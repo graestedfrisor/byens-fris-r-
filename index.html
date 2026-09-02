@@ -4,14 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Byens Frisør</title>
-</head>
-<body style="text-align:center;font-family:Arial;padding:40px;">
-  <h1>Byens Frisør</h1>
-  <p>Følg os på sociale medier</p>
 
-  <p><a href="https://instagram.com/">Instagram</a></p>
-  <p><a href="https://facebook.com/">Facebook</a></p>
-  <p><a href="https://tiktok.com/">TikTok</a></p>
-  <p><a href="https://wa.me/4512345678">WhatsApp</a></p>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #111111, #1d1d1d);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      background: #181818;
+      border: 1px solid #c9a35b;
+      border-radius: 28px;
+      padding: 38px 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border: 2px solid #c9a35b;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+    }
+
+    h1 {
+      font-size: 34px;
+      letter-spacing: 2px;
+      color: #d6b56f;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #cfcfcf;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 17px;
+      margin: 14px 0;
+      border-radius: 14px;
+      text-decoration: none;
+      background: #242424;
+      color: white;
+      border: 1px solid #3d3d3d;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #c9a35b;
+      color: #111;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="logo">✂️</div>
+
+    <h1>BYENS FRISØR</h1>
+
+    <p class="subtitle">
+      Følg os på sociale medier
+    </p>
+
+    <a class="button" href="https://instagram.com/">
+      📸 Instagram
+    </a>
+
+    <a class="button" href="https://facebook.com/">
+      Facebook
+    </a>
+
+    <a class="button" href="https://tiktok.com/">
+      🎵 TikTok
+    </a>
+
+    <a class="button" href="https://wa.me/4512345678">
+      💬 WhatsApp
+    </a>
+
+    <div class="footer">
+      Byens Frisør
+    </div>
+
+  </div>
+
 </body>
 </html>
