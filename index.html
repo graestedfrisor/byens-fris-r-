@@ -14,8 +14,10 @@
 
     body {
       min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #111111, #1d1d1d);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(201,163,91,0.12), transparent 35%),
+        linear-gradient(180deg, #0b0b0b, #161616);
       color: white;
       display: flex;
       justify-content: center;
@@ -26,63 +28,115 @@
     .card {
       width: 100%;
       max-width: 420px;
-      text-align: center;
-      background: #181818;
-      border: 1px solid #c9a35b;
+      background: rgba(22,22,22,0.96);
+      border: 1px solid rgba(214,181,111,0.55);
       border-radius: 28px;
-      padding: 38px 24px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+      padding: 34px 22px 28px;
+      text-align: center;
+      box-shadow:
+        0 25px 70px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.03);
     }
 
     .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 20px;
-      border: 2px solid #c9a35b;
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 18px;
       border-radius: 50%;
+      border: 2px solid #d6b56f;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 34px;
+      background: #101010;
+      box-shadow: 0 0 28px rgba(214,181,111,0.15);
+    }
+
+    .small-title {
+      color: #9f9f9f;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     h1 {
-      font-size: 34px;
-      letter-spacing: 2px;
       color: #d6b56f;
-      margin-bottom: 10px;
+      font-size: 32px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
     }
 
-    .subtitle {
-      color: #cfcfcf;
-      margin-bottom: 30px;
-      font-size: 16px;
+    .location {
+      color: #f0f0f0;
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    .divider {
+      width: 54px;
+      height: 2px;
+      background: #d6b56f;
+      margin: 0 auto 28px;
+      border-radius: 5px;
     }
 
     .button {
-      display: block;
       width: 100%;
-      padding: 17px;
-      margin: 14px 0;
-      border-radius: 14px;
+      min-height: 58px;
+      margin: 13px 0;
+      padding: 0 18px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       text-decoration: none;
-      background: #242424;
+      background: linear-gradient(180deg, #252525, #1d1d1d);
       color: white;
-      border: 1px solid #3d3d3d;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.2s;
+      border: 1px solid #383838;
+      font-size: 17px;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      transition: 0.2s ease;
     }
 
-    .button:hover {
-      background: #c9a35b;
+    .button:active {
+      transform: scale(0.98);
+      background: #d6b56f;
       color: #111;
     }
 
+    .icon {
+      font-size: 22px;
+      width: 34px;
+      text-align: left;
+    }
+
+    .arrow {
+      color: #d6b56f;
+      font-size: 20px;
+    }
+
     .footer {
-      margin-top: 30px;
-      color: #8f8f8f;
-      font-size: 13px;
+      margin-top: 28px;
+      color: #8d8d8d;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .card {
+        padding: 28px 18px 24px;
+      }
+
+      .button {
+        min-height: 54px;
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -93,30 +147,42 @@
 
     <div class="logo">✂️</div>
 
+    <div class="small-title">Herrefrisør</div>
+
     <h1>BYENS FRISØR</h1>
 
-    <p class="subtitle">
-      Følg os på sociale medier
-    </p>
+    <div class="location">
+      Din lokale frisør i Græsted
+    </div>
+
+    <div class="divider"></div>
 
     <a class="button" href="https://instagram.com/">
-      📸 Instagram
+      <span class="icon">📸</span>
+      <span>Instagram</span>
+      <span class="arrow">›</span>
     </a>
 
     <a class="button" href="https://facebook.com/">
-      Facebook
+      <span class="icon">🔵</span>
+      <span>Facebook</span>
+      <span class="arrow">›</span>
     </a>
 
     <a class="button" href="https://tiktok.com/">
-      🎵 TikTok
+      <span class="icon">🎵</span>
+      <span>TikTok</span>
+      <span class="arrow">›</span>
     </a>
 
     <a class="button" href="https://wa.me/4512345678">
-      💬 WhatsApp
+      <span class="icon">💬</span>
+      <span>WhatsApp</span>
+      <span class="arrow">›</span>
     </a>
 
     <div class="footer">
-      Byens Frisør
+      BYENS FRISØR • GRÆSTED
     </div>
 
   </div>
