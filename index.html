@@ -13,119 +13,197 @@
       padding: 0;
     }
 
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+
     body {
       min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #0d0d0d, #1c1c1c);
-      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #2b2b2b 0%, #171717 35%, #0b0b0b 100%);
+      color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 24px 16px;
+      padding: 25px 16px;
     }
 
     .card {
       width: 100%;
       max-width: 420px;
-      background: #171717;
-      border: 1px solid #c9a35b;
-      border-radius: 26px;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+      background: rgba(22, 22, 22, 0.98);
+      border: 1px solid #c8a85d;
+      border-radius: 28px;
+      padding: 28px 18px 24px;
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        0 0 25px rgba(200, 168, 93, 0.08);
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      margin: 0 auto 16px;
+      width: 86px;
+      height: 86px;
+      margin: 0 auto 15px;
       border-radius: 50%;
       border: 2px solid #d7b768;
+      background: #101010;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 42px;
-      background: #111;
+      font-size: 40px;
+      box-shadow: 0 0 20px rgba(215, 183, 104, 0.12);
     }
 
     h1 {
-      font-size: 28px;
+      text-align: center;
       color: #d7b768;
+      font-size: 30px;
       margin-bottom: 7px;
+      letter-spacing: 0.5px;
     }
 
     .subtitle {
-      color: #bcbcbc;
+      text-align: center;
+      color: #bdbdbd;
       font-size: 15px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
-    .link {
+    .social-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       width: 100%;
-      min-height: 60px;
-      padding: 0 18px;
+      min-height: 62px;
+
       margin: 12px 0;
-      background: #202020;
-      border: 1px solid #333;
-      border-radius: 16px;
-      color: #fff;
+      padding: 0 17px;
+
+      background: linear-gradient(180deg, #242424, #1c1c1c);
+      border: 1px solid #343434;
+      border-radius: 17px;
+
+      color: #ffffff;
       text-decoration: none;
+
       font-size: 17px;
-      font-weight: bold;
-      transition: 0.2s;
+      font-weight: 700;
+
+      box-shadow: 0 7px 16px rgba(0, 0, 0, 0.18);
     }
 
-    .link:hover {
-      border-color: #d7b768;
-      background: #272727;
-      transform: translateY(-2px);
+    .social-link:active {
+      transform: scale(0.98);
     }
 
     .left {
       display: flex;
       align-items: center;
-      gap: 13px;
+      gap: 14px;
     }
 
     .icon {
-      width: 32px;
-      height: 32px;
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      font-size: 23px;
+      align-items: center;
+      font-size: 21px;
+      font-weight: 800;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+
+    .instagram {
+      background: linear-gradient(
+        135deg,
+        #feda75,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .tiktok {
+      background: #050505;
+      border: 1px solid #444;
+      text-shadow: 2px 1px #25f4ee, -2px -1px #fe2c55;
+    }
+
+    .snapchat {
+      background: #fffc00;
+      color: #000000;
+    }
+
+    .phone-icon {
+      background: #d7b768;
+      color: #111111;
     }
 
     .arrow {
       color: #d7b768;
-      font-size: 26px;
-      font-weight: normal;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1;
     }
 
     .phone {
-      border-color: #d7b768;
+      border: 1px solid #d7b768;
+      margin-top: 18px;
+      background: linear-gradient(180deg, #29261f, #201f1b);
+    }
+
+    .small {
+      display: block;
+      color: #9d9d9d;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 3px;
     }
 
     .footer {
-      margin-top: 25px;
+      text-align: center;
+      margin-top: 22px;
       padding-top: 20px;
-      border-top: 1px solid #333;
-      color: #888;
+      border-top: 1px solid #333333;
+      color: #aaaaaa;
       font-size: 13px;
     }
 
-    .gold {
+    .footer-gold {
       color: #d7b768;
+    }
+
+    @media (max-width: 360px) {
+      .card {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      .social-link {
+        font-size: 16px;
+        padding-left: 13px;
+        padding-right: 13px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
+  <main class="card">
 
     <div class="logo">✂️</div>
 
@@ -137,62 +215,110 @@
 
 
     <!-- INSTAGRAM -->
-    <a class="link" href="DIN-INSTAGRAM-LINK">
+    <a
+      class="social-link"
+      href="DIN-INSTAGRAM-LINK"
+      target="_blank"
+      rel="noopener"
+    >
       <span class="left">
-        <span class="icon">📸</span>
-        Instagram
+        <span class="icon instagram">◎</span>
+
+        <span>
+          Instagram
+          <span class="small">Følg os på Instagram</span>
+        </span>
       </span>
+
       <span class="arrow">›</span>
     </a>
 
 
     <!-- FACEBOOK -->
-    <a class="link" href="DIN-FACEBOOK-LINK">
+    <a
+      class="social-link"
+      href="DIN-FACEBOOK-LINK"
+      target="_blank"
+      rel="noopener"
+    >
       <span class="left">
-        <span class="icon">ⓕ</span>
-        Facebook
+        <span class="icon facebook">f</span>
+
+        <span>
+          Facebook
+          <span class="small">Find os på Facebook</span>
+        </span>
       </span>
+
       <span class="arrow">›</span>
     </a>
 
 
     <!-- TIKTOK -->
-    <a class="link" href="DIN-TIKTOK-LINK">
+    <a
+      class="social-link"
+      href="DIN-TIKTOK-LINK"
+      target="_blank"
+      rel="noopener"
+    >
       <span class="left">
-        <span class="icon">♪</span>
-        TikTok
+        <span class="icon tiktok">♪</span>
+
+        <span>
+          TikTok
+          <span class="small">Følg os på TikTok</span>
+        </span>
       </span>
+
       <span class="arrow">›</span>
     </a>
 
 
     <!-- SNAPCHAT -->
-    <a class="link" href="DIN-SNAPCHAT-LINK">
+    <a
+      class="social-link"
+      href="DIN-SNAPCHAT-LINK"
+      target="_blank"
+      rel="noopener"
+    >
       <span class="left">
-        <span class="icon">👻</span>
-        Snapchat
+        <span class="icon snapchat">👻</span>
+
+        <span>
+          Snapchat
+          <span class="small">Tilføj os på Snapchat</span>
+        </span>
       </span>
+
       <span class="arrow">›</span>
     </a>
 
 
     <!-- TELEFON -->
-    <a class="link phone" href="tel:+4525631818">
+    <a
+      class="social-link phone"
+      href="tel:+4525631818"
+    >
       <span class="left">
-        <span class="icon">📞</span>
-        25 63 18 18
+        <span class="icon phone-icon">☎</span>
+
+        <span>
+          25 63 18 18
+          <span class="small">Tryk her for at ringe</span>
+        </span>
       </span>
+
       <span class="arrow">›</span>
     </a>
 
 
     <div class="footer">
-      <span class="gold">✂</span>
-      Velkommen hos Byens Frisør
-      <span class="gold">✂</span>
+      <span class="footer-gold">✂</span>
+      &nbsp; Velkommen hos Byens Frisør &nbsp;
+      <span class="footer-gold">✂</span>
     </div>
 
-  </div>
+  </main>
 
 </body>
 </html>
